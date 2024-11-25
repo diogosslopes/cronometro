@@ -4,6 +4,7 @@ const Timer = () => {
 
     const [number, setNumber] = useState(0)
     const [timer, setTimer] = useState(null)
+    const [startStop, setStartStop] = useState("Iniciar")
     let numero = number
 
     const go = () => {
@@ -12,12 +13,14 @@ const Timer = () => {
             setTimer(null)
             numero = number
             console.log("Parou")
+            setStartSstop("Iniciar")
         } else {
             setTimer(setInterval(() => {
                 numero += 0.1
                 let n = numero
                 setNumber(n)
             }, 100))
+            setStartSstop("Pausar")
             console.log(timer)
         }
     }
