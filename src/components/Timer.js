@@ -43,7 +43,7 @@ const Timer = () => {
                 <p>{number.toFixed(1)}</p>
             </div>
             <div className="buttons">
-                <button className="button" onClick={go}>Iniciar</button>
+                <button className="button" onClick={go}>{startStop}</button>
                 <button className="button" onClick={stop}>Limpar</button>
             </div>
         </div>
