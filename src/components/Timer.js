@@ -13,14 +13,14 @@ const Timer = () => {
             setTimer(null)
             numero = number
             console.log("Parou")
-            setStartSstop("Iniciar")
+            setStartStop("Iniciar")
         } else {
             setTimer(setInterval(() => {
                 numero += 0.1
                 let n = numero
                 setNumber(n)
             }, 100))
-            setStartSstop("Pausar")
+            setStartStop("Pausar")
             console.log(timer)
         }
     }
