@@ -31,6 +31,7 @@ const Timer = () => {
         clearInterval(timer)
         setNumber(0)
         setTimer(null)
+        setStartStop("Iniciar")
         console.log(timer)
     }
 
